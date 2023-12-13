@@ -13,6 +13,10 @@ app.use(express.urlencoded({extended: true}))
 // <img src={`http://localhost:8080/images/${photo}`} className='img' alt="Post"/>
 app.use(express.static('api/public'))
 app.use(cors())
+app.get("/", (req, res)=>{
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.send("api is running..");
+})
 app.use(morgan('dev'))
 
 
