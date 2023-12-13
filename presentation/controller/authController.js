@@ -1,4 +1,4 @@
-import AuthManager from "../../domain/manager/authManager.js"
+import AuthManager from "../../domain/manager/AuthManager.js"
 
 export const register= async(req,res,next)=>{
     try{
